@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  all: unset;
+}
+
+.container-general {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 5vh;
+}
+
+.container-general__for-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.container-general__header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container-general__who-we-are {
+  width: 375px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  padding-bottom: 15px;
+}
+
+.container-general__for-people {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 600px;
+}
+
+.container-general__person {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+  cursor: pointer;
+}
+
+img {
+  max-width: 170px;
+}
+
+.container-general__person--image-down {
+  margin-top: 15vh;
+}
+
+.img-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.role {
+  writing-mode: vertical-rl;
+}
+
+@media (min-width: 768px) {
+  .container-general {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-general__for-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 800px;
+  }
+  .container-general__for-people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1444px) {
+  .container-general {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-general__for-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+  }
+  .container-general__for-people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=my-team-page.css.map */

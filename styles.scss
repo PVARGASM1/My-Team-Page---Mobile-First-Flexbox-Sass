@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+$title-size: 18px;
+$text-size: 14px;
+$color: black;
+
+@mixin display ($direction: row,$content: center,$cross: center) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    justify-content: $content;
+    align-items: $cross;
+}
+
+
+.container-general {
+    @include display;
+    margin: 10vh 5vh; 
+}
+
+.container-general__for-text {
+    @include display($content: space-evenly);
+    width: 100%;
+    max-width: 600px;
+}
+
+.container-general__header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container-general__who-we-are {
+    width: 375px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+.container-general__for-people {
+    @include display ($content: space-evenly);
+    max-width: 600px;
+}
+
+.container-general__person {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    cursor: pointer;
+}
+
+
+img {
+    max-width: 110px;
+}
+
+.container-general__person--image-down {
+    margin-top: 15vh;
+}
+
+.img-name {
+    @include display($direction: column,$content: flex-start,$cross:flex-start);
+}
+
+.role {
+    writing-mode: vertical-rl;
+}
+
+@media (min-width: 768px) {
+    .container-general {
+        @include display;
+    }
+
+    .container-general__for-text {
+        @include display ($content: space-evenly);
+        max-width: 800px;
+    }
+
+    .container-general__for-people {
+        @include display ($content: space-evenly);
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1444px) {
+    .container-general {
+        @include display;
+    }
+
+    .container-general__for-text {
+        @include display ($content: space-evenly);
+        max-width: 100%;
+    }
+
+    .container-general__for-people {
+        @include display ($content: space-evenly);
+        max-width: 100%;
+    }
+}
